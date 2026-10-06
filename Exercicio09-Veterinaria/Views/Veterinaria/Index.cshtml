@@ -1,0 +1,1 @@
+@model List<VeterinariaMVC.Models.Animal><h1>Animais</h1><table><tr><th>ID</th><th>Nome</th><th>Espécie</th><th>Idade</th><th>Dono</th></tr>@foreach(var a in Model){<tr><td>@a.Id</td><td>@a.Nome</td><td>@a.Especie</td><td>@a.Idade</td><td>@a.Dono</td></tr>}</table>

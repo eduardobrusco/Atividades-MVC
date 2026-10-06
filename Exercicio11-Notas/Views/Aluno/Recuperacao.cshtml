@@ -1,0 +1,1 @@
+@model List<NotasMVC.Models.Aluno><h1>Sistema de Notas - Recuperacao</h1><table><tr><th>Aluno</th><th>Curso</th><th>Média</th><th>Situação</th></tr>@foreach(var a in Model){var m=(a.Nota1+a.Nota2+a.Nota3)/3.0;var s=m>=6?"Aprovado":m>=4?"Recuperação":"Reprovado";<tr><td>@a.Nome</td><td>@a.Curso</td><td>@m.ToString("N2")</td><td>@s</td></tr>}</table>
